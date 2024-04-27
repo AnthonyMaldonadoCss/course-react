@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <FirstApp /> Debe de hacer match con el snapShot 1`] = `
+<div>
+  <h1
+    style="color: red;"
+  >
+    Anthony Maldonado
+    :
+    <span
+      style="color: blue; font-size: xx-large;"
+    >
+        Software Developer
+    </span>
+  </h1>
+  <h2>
+    Hola, soy Anthony
+  </h2>
+  <h4
+    id="subtitle"
+  >
+    123
+  </h4>
+  <p>
+     
+    27
+     - 
+    3
+     - 
+    2024
+     
+  </p>
+  <p>
+     El fragment es para devolver lo que se quiere renderizar en un elemento padre 
+  </p>
+  <ul
+    style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: flex-start;"
+  >
+     
+    <li>
+       
+      1
+       
+    </li>
+    <li>
+       
+      2
+       
+    </li>
+    <li>
+       
+      3
+       
+    </li>
+    <li>
+       
+      4
+       
+    </li>
+    <li>
+       
+      5
+       
+    </li>
+    <li>
+       
+      6
+       
+    </li>
+    <li>
+       
+      7
+       
+    </li>
+    <li>
+       
+      8
+       
+    </li>
+    <li>
+       
+      9
+       
+    </li>
+    <li>
+       
+      10
+       
+    </li>
+     
+  </ul>
+</div>
+`;
