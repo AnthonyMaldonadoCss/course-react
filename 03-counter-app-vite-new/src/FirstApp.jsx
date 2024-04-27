@@ -18,9 +18,6 @@ const loop = () => {
 */
 
 export const FirstApp = ({title, subTitle}) => {
-
-  // console.log(props);
-
   return (
     <> 
       <h1 style={ { color: "red" } } > 
@@ -34,7 +31,7 @@ export const FirstApp = ({title, subTitle}) => {
         { title }
       </h2>
 
-      <h4>
+      <h4 id='subtitle'>
         { subTitle } 
       </h4>
       
@@ -56,6 +53,6 @@ FirstApp.propTypes = {
 }
 
 FirstApp.defaultProps = {
-  title: 'No hay titulo',
-  subTitle: 'qq1111'
+  title: 'Hola, soy Anthony',
+  subTitle: '123'
 }
