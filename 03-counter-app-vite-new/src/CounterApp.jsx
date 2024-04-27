@@ -23,6 +23,9 @@ export const CounterApp = ({ value }) => {
       case 'reset':
         setCounter( value );
         break;
+      default:
+        setCounter( value );
+        break;
     }
   
     // setCounter( counter + 1 );
