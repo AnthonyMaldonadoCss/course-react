@@ -1,14 +1,27 @@
 import { useState } from 'react'
 import AddCategory from './components/AddCategory';
 
+
 const GifExpertApp = () => {
   
   const [categories, setCategories] = useState(['One Punch', 'Samurai X', 'Dragon Ball']);
 
   console.log(categories);
 
+  const validateCategory = (newCategory) => {
+    
+    const validate = (category) => {
+      const bodyCategory = category.split(' ').map(word => word.toLowerCase()).join(' ');
+      newCategory = newCategory.split(' ').map(word => word.toLowerCase()).join(' ');
+      return bodyCategory === newCategory
+    }
+
+    return categories.some( validate );
+  }
+
   const onAddCategory = (NewCategory) => {
-    console.log(NewCategory);
+    if ( validateCategory(NewCategory) ) return;
+    
     setCategories([ ...categories, NewCategory ]);
   }
 
@@ -27,8 +40,8 @@ const GifExpertApp = () => {
       {/* Listado de categorias */}
       <ol>
         {
-          categories.map((category, index) => (
-            <li key={ index }> { category.toUpperCase() } </li>
+          categories.map((category) => (
+            <li key={ category }> { category.toUpperCase() } </li>
           ))
         }
       </ol>
