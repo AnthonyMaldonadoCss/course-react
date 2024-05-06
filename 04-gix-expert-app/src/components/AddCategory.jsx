@@ -1,7 +1,7 @@
 import { useState } from "react"
 import PropTypes from 'prop-types';
 
-export default function AddCategory( { onNewCategory } ) {
+function AddCategory( { onNewCategory } ) {
   
   const [inputValue, setInputValue] = useState('');
 
@@ -35,3 +35,5 @@ export default function AddCategory( { onNewCategory } ) {
 AddCategory.propTypes = {
   onNewCategory: PropTypes.func
 }
+
+export default AddCategory
